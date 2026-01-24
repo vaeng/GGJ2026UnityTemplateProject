@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: OnPlayerHealthChanged
+  m_EditorClassIdentifier: Assembly-CSharp::FloatGameEvent
+  enableDebugLogs: 0
+  description: "Raised when player's health changes. Passes new health value (0-100).\n\nCommon
+    Listeners:\n- HealthBarUI: Update health bar fill amount\n- AudioManager: Play
+    hurt sound when health decreases\n- CameraController: Trigger damage shake when
+    health drops\n- PostProcessingController: Increase vignette on low health\n-
+    PlayerAnimator: Trigger hurt/heal animations\n- AchievementManager: Track damage
+    taken for achievements\n\nUse Case:\nCan be raised for both damage and healing.
+    Listeners can compare \nprevious vs new value to determine if it's damage or
+    healing.\nPass the new current health value, not the damage/heal amount."

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58ed87f6d683ae4380c703929b4aac3, type: 3}
+  m_Name: OnPlayerRespawned
+  m_EditorClassIdentifier: Assembly-CSharp::GameEvent
+  enableDebugLogs: 0
+  description: "Raised when the player respawns after death.\n\nCommon Listeners:\n-
+    CameraController: Reset camera position to spawn point\n- UIManager: Hide death
+    screen, show HUD\n- PlayerController: Re-enable player input and movement\n-
+    AudioManager: Play respawn sound effect\n- CheckpointManager: Load checkpoint
+    data\n- EffectsManager: Play respawn particle effect\n\nUse Case:\nAfter player
+    dies and OnPlayerDied fires, this event fires when \nplayer is back in action.
+    Separates death state from respawn state."

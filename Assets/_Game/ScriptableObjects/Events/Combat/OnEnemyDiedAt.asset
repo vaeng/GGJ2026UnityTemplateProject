@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: OnEnemyDiedAt
+  m_EditorClassIdentifier: Assembly-CSharp::Vector3GameEvent
+  enableDebugLogs: 0
+  description: 'Raised when an enemy is killed. Passes the enemy''s death position
+    as Vector3.
+
+
+    Common Listeners:
+
+    - VFXManager: Spawn death particles/explosion
+    at position
+
+    - LootManager: Drop coins, health, or items at position
+
+    -
+    AudioManager: Play death sound at 3D position
+
+    - ScoreManager: Add points
+    (could also listen to OnScoreChanged)
+
+    - ComboSystem: Increment kill combo
+    counter
+
+    - QuestManager: Track enemy kills for objectives
+
+    - WaveManager:
+    Check if wave is complete (all enemies dead)
+
+    - CameraController: Small screen
+    shake toward death position
+
+
+    Use Case:
+
+    Passes position so effects can
+    spawn at exact death location. Better than
+
+    just "enemy died" because you
+    know WHERE it happened. Essential for
+
+    3D audio, particle effects, and loot
+    drops.'

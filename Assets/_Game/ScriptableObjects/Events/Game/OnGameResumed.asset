@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58ed87f6d683ae4380c703929b4aac3, type: 3}
+  m_Name: OnGameResumed
+  m_EditorClassIdentifier: Assembly-CSharp::GameEvent
+  enableDebugLogs: 0
+  description: 'Raised when the game is resumed from pause state.
+
+
+    Common Listeners:
+
+    -
+    UIManager: Hide pause menu, show gameplay UI
+
+    - AudioManager: Transition
+    back to normal audio snapshot
+
+    - TimeManager: Set Time.timeScale = 1
+
+    -
+    PlayerController: Re-enable input
+
+    - EnemyAI: Resume AI updates
+
+    - ParticleManager:
+    Resume all particle systems
+
+
+    Use Case:
+
+    Pair this with OnGamePaused
+    for proper pause/resume flow.
+
+    Raise when player presses "Resume" or ESC
+    while paused.
+
+    Should restore game to pre-pause state.'
