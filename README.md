@@ -1,6 +1,15 @@
 # GGJ2026 Unity Template Project
 
-A ready-to-use Unity 6.3 template project designed to help you hit the ground running at Global Game Jam 2026. This template includes pre-configured packages, an organized folder structure, and helper scripts covering common game jam patterns discussed in the presentation.
+A ready to use Unity 6.3 template project designed to help you hit the ground running at Global Game Jam 2026. This template includes pre-configured packages, an organized folder structure, and helper scripts covering common game jam patterns discussed in the presentation.
+
+Clone, Fork or download!
+
+## Links
+
+- Download here: [GGJ2026 Release](https://github.com/Theby/GGJ2026UnityTemplateProject/releases/tag/v1.0)
+- Google Slides at: [Cómo usar Unity para Game Jams: Herramientas, Assets y Features](https://docs.google.com/presentation/d/1REyQtc23pKceG6KV5hYggK87grDMffjMxf0hWARtJts/edit?slide=id.p#slide=id.p)
+- Contact me on: [The Fifth Corner](https://theby.github.io)
+- Repo url: [GGJ2026UnityTemplateProject](https://github.com/Theby/GGJ2026UnityTemplateProject)
 
 ## Requirements
 
